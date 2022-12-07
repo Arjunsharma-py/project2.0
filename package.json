@@ -1,0 +1,11 @@
+{
+  "name": "project2.0",
+  "version": "1.0.0",
+  "description": "my new website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun sharma",
+  "license": "ISC"
+}
