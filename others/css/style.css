@@ -132,7 +132,7 @@ header::before{
 }
 
 #innercontent a{
-    padding: 0.7vw 1vw;
+    padding: 1.1vw 1.5vw;
     background-color: white;
     color: #2dcbff;
     font-size: 2vw;
@@ -146,3 +146,10 @@ header::before{
     color: white;
 }
 
+footer{
+    /* background-color: #2dcbff; */
+    height: 15vw;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
