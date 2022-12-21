@@ -228,7 +228,7 @@ header::before{
 
 .boxDesign img{
     margin: 1vw;
-    width: auto;
+    width: 4vw;
 }
 
 .boxDesign h2{
@@ -338,7 +338,7 @@ header::before{
 
 #newsBox img{
     width: 100%;
-    height: 13vw;
+    height: 14vw;
     margin: 0;
     border-top-left-radius: 0.5vw;
     border-top-right-radius: 0.5vw;
@@ -346,7 +346,7 @@ header::before{
 
 #textbox{
     padding: 2vw;
-    height: 20vw;
+    height: 22vw;
 }
 
 #textbox a{
@@ -370,6 +370,7 @@ header::before{
 #updateboxouter form input{
     border: 0px;
     padding: 5px;
+    font-size: 1.4vw;
 }
 
 #updateboxouter form button{
@@ -377,6 +378,7 @@ header::before{
     padding: 5px;
     background-color: #2dcbff;
     color: white;
+    font-size: 1.4vw;
 }
 
 footer{
