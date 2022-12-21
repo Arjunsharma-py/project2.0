@@ -6,6 +6,16 @@
     padding: 0;
 }
 
+.commonheadingsize{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.commonsubheadingsize{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
 .commonBox{
     display: flex;
     flex-direction: column;
@@ -157,7 +167,7 @@ header::before{
     padding: 6vw;
 }
 
-#part1 a{
+.commonButton{
     background-color: #4fd3ff;
     margin-top: 2vw;
     padding: 1vw;
@@ -165,7 +175,7 @@ header::before{
     font-size: 1.6vw;
 }
 
-#part1 a:hover{
+.commonButton:hover{
     background-color: #2dcbff;
     box-shadow: 0vw 0vw 1vw 0.1vw rgba(0, 0, 0, 0.404);
 }
@@ -199,9 +209,10 @@ header::before{
     color: gray;
 }
 
-#boxes{
+.boxes{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
@@ -217,6 +228,7 @@ header::before{
 
 .boxDesign img{
     margin: 1vw;
+    width: auto;
 }
 
 .boxDesign h2{
@@ -291,10 +303,121 @@ header::before{
     font-size: 1.3vw;
 }
 
-footer{
-    /* background-color: #2dcbff; */
-    height: 0vw;
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.news p{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsBox a{
+    padding: 0.6vw;
+    font-size: 1.2vw;
+}
+
+#nBox1{
+    padding: 0;
+    width: 24vw;
+}
+
+#nBox2{
+    padding: 0;
+    width: 24vw;
+}
+
+#nBox3{
+    padding: 0;
+    width: 24vw;
+}
+
+#newsBox img{
     width: 100%;
-    position: fixed;
+    height: 13vw;
+    margin: 0;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+}
+
+#textbox{
+    padding: 2vw;
+    height: 20vw;
+}
+
+#textbox a{
+    margin-top: 1vw;
+}
+
+#updateboxouter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#updateboxouter form{
+    display: flex;
+    background-color: #c2f0ff;
+    padding: 2vw 5vw;
+    margin: 2vw 0vw;
+}
+
+#updateboxouter form input{
+    border: 0px;
+    padding: 5px;
+}
+
+#updateboxouter form button{
+    border: 0px;
+    padding: 5px;
+    background-color: #2dcbff;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2dcbff;
+    width: 100%;
     bottom: 0;
+}
+
+#pageDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#address{
+    width: 25vw;
+    font-size: 1.2vw;
+    color: white;
+}
+
+#socialmedia{
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    padding: 2vw;
+}
+
+#socialmedia img{
+    filter: invert(1);
+    width: 3.5vw;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 1vw;
+    color: white;
+    padding: 0.6vw;
 }
