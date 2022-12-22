@@ -379,6 +379,7 @@ header::before{
     background-color: #2dcbff;
     color: white;
     font-size: 1.4vw;
+    cursor: pointer;
 }
 
 footer{

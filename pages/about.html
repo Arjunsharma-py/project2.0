@@ -72,11 +72,12 @@
             <h1 class="commonheadingsize">Get My Updates</h1>
             <p class="commonsubheadingsize">To get updates of the endangered people around the world subscribe now.</p>
         </div>
-        <div id="updateboxouter">
-            <form action="/">
-                <input type="text" placeholder="example@gmail.com">
-                <button>Subscribe</button>
+        <div id="updateboxouter" style="display: flex;flex-direction: column;padding: 1vw 0vw;">
+            <form action="/emailsub" method="post" id="form" onsubmit = "return validate();">
+                <input type="email" name="Email" id="email" placeholder="example@gmail.com">
+                <button type="submit">Subscribe</button>
             </form>
+            <div id="message"></div>
         </div>
     </section>
     <footer>
@@ -105,6 +106,14 @@
             acceptance of our Terms of Service, Privacy Policy and Cookies Policy.
         </div>
     </footer>
+    <script>
+        function validate(){
+            var update = document.getElementById("message");
+            var text="thank you for subscription"
+            update.innerHTML =text;
+            return true;
+        }
+    </script>
 </body>
 
 </html>

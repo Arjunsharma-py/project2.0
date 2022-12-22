@@ -155,6 +155,7 @@ li{
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
+    color: black;
   }
 
   label{

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,182 +13,186 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="/">
-            <div id="navlogo">
-                <span>donate.in</span>
-                <img src="..//images/logo.png" alt="Donate">
-                <p>Charity ends poverty</p>
-            </div>
-        </a>
-        <div id="navlinks">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/donate">Donate</a></li>
-            </ul>
-        </div>
+  <div class="navbar">
+    <a href="/">
+      <div id="navlogo">
+        <span>donate.in</span>
+        <img src="..//images/logo.png" alt="Donate">
+        <p>Charity ends poverty</p>
+      </div>
+    </a>
+    <div id="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/donate">Donate</a></li>
+      </ul>
     </div>
-      <main>
-        <div class="container">
-            <h1>Contribute for the World</h1>
-            <p>Donate for the cause of your choice.</br>We will ensure that your contribution reaches trustable NGOs.</p>
-            <div class="donation-box">
-                <div class="money-donate">
-                    <h3>Donate Money</h3>
-                    <div id="error_message">
-     
-                    </div>
-                    <form id="form" onsubmit = "return validate1();">
-                        <div class="input-row">
-                            <div class="input-group">
-                              <label for="name">Name</label>
-                              <input type="text" id="name" placeholder="Enter Name">  
-                            </div>
-                            <div class="input-group">
-                                <label for="phone">Phone</label>
-                                <input type="number" id="phone" placeholder="9999999999">
-                              </div>
-                            </div>
-                            <div class="input-row">
-                                <div class="input-group">
-                                  <label for="amount">Amount</label>
-                                  <input type="number" id="amount" placeholder="₹ 250">
-                                </div>
-                                <div class="input-group">
-                                    <label for="purpose">Choose your purpose</label>
-                                    <select id="purpose" name="purpose">
-                                      <option value="education">Education</option>
-                                      <option value="disasterrelief">Disaster Relief</option>
-                                      <option value="foodforneedy">Food for Needy</option>
-                                      <option value="animal">Animal Care</option>
-                                      <option value="environment">Environment</option>
-                                      <option value="eldercare">Elder Care</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button type="submit">DONATE</button>
-                    </form>
-                </div>
-                <div class="other-donate">
-                    <h3>Donate other goods</h3>
-                    <div id="error_message2">
-     
-                    </div>
-                    <form id="form" onsubmit = "return validate2();">
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="name2">Name</label>
-                                <input type="text" id="name2" placeholder="Enter Name">
-                            </div>
-                        </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="address">Address</label>
-                                <input type="text" id="address" placeholder="We will pick your donation from your address">
-                            </div>
-                        </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="options">Select from options</label>
-                                <select id="options" name="options">
-                                      <option value="books">Books</option>
-                                      <option value="food">Food</option>
-                                      <option value="clothes">Clothes</option>
-                                </select>
-                            </div>
-                            <div class="input-group">
-                                <label for="img">Select image:</label>
-                                <input type="file" id="img" name="img" accept="image/*">
-                            </div>
-                        </div>
-                        <button type="submit">SUBMIT</button>
-                    </form>
-                </div>
+  </div>
+  <main>
+    <div class="container">
+      <h1>Contribute for the World</h1>
+      <p>Donate for the cause of your choice.</br>We will ensure that your contribution reaches trustable NGOs.</p>
+      <div class="donation-box">
+        <div class="money-donate">
+          <h3>Donate Money</h3>
+          <div id="error_message">
+
+          </div>
+          <form action="/donatemoney" method="post" id="form" onsubmit="return validate1();">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name1" name="Name" placeholder="Enter Name">
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone1" name="Phone" placeholder="9999999999">
+              </div>
             </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="Amount" placeholder="₹25-25000">
+              </div>
+              <div class="input-group">
+                <label for="purpose">Choose your purpose</label>
+                <select id="purpose" name="Purpose">
+                  <option value="education">Education</option>
+                  <option value="disasterrelief">Disaster Relief</option>
+                  <option value="foodforneedy">Food for Needy</option>
+                  <option value="animal">Animal Care</option>
+                  <option value="environment">Environment</option>
+                  <option value="eldercare">Elder Care</option>
+                </select>
+              </div>
             </div>
+            <button type="submit">DONATE</button>
+          </form>
         </div>
-      </main>
-      <footer>
-        <div id="pageDetails">
-            <div id="address">
-                <p>
-                    B.S.A. College of Engineering & Technology Near New Bus Stand, Mathura(U.P.), 281004
-                </p>
-                <p>
-                    7055602438, 910533781
-                </p>
-                <p>
-                    info@bsacet.org
-                </p>
+        <div class="other-donate">
+          <h3>Donate other goods</h3>
+          <div id="error_message2">
+
+          </div>
+          <form action="/donategoods" method="post" id="form1" onsubmit="return validate2();">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="name2">Name</label>
+                <input type="text" id="name2" name="Name" placeholder="Enter Name">
+              </div>
             </div>
-            <div id="socialmedia">
-                <p style="color: white; font-size: 1.5vw;">Our social plateforms</p>
-                <a href="/"><img src="/images/facebook.png" alt="facebook"></a>
-                <a href="/"><img src="/images/instagram.png" alt="instaram"></a>
-                <a href="/"><img src="/images/twitter.png" alt="twitter"></a>
-                <a href="/"><img src="/images/youtube.png" alt="youtube"></a>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address2" name="Address"
+                  placeholder="We will pick your donation from your address">
+              </div>
             </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="options">Select from options</label>
+                <select id="options" name="Options">
+                  <option value="books">Books</option>
+                  <option value="food">Food</option>
+                  <option value="clothes">Clothes</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="img">Select image:</label>
+                <input type="file" id="img" name="Images" accept="image/*">
+              </div>
+            </div>
+            <button type="submit">SUBMIT</button>
+          </form>
         </div>
-        <div id="copyright">
-            Copyright © 2022 Insider Inc. All rights reserved. Registration on or use of this site constitutes
-            acceptance of our Terms of Service, Privacy Policy and Cookies Policy.
-        </div>
-    </footer>
-      <script>
-        function validate1(){
-        var name = document.getElementById("name").value;
-        var phone = document.getElementById("phone").value;
-        var amount = document.getElementById("amount").value;
-        var error_message = document.getElementById("error_message");
-    
-        error_message.style.padding = "10px";
-    
-        var text;
-        if(name.length ==0){
-          text = "Please Enter valid Name";
-          error_message.innerHTML = text;
-          return false;
-        }
-        if(isNaN(phone) || phone.length != 10){
-          text = "Please Enter valid Phone Number";
-          error_message.innerHTML = text;
-          return false;
-        }
-        if(amount<50){
-          text = "Please Enter Amount more than 50";
-          error_message.innerHTML = text;
-          return false;
-        }
-        
-        return true;
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="pageDetails">
+      <div id="address">
+        <p>
+          B.S.A. College of Engineering & Technology Near New Bus Stand, Mathura(U.P.), 281004
+        </p>
+        <p>
+          7055602438, 910533781
+        </p>
+        <p>
+          info@bsacet.org
+        </p>
+      </div>
+      <div id="socialmedia">
+        <p style="color: white; font-size: 1.5vw;">Our social plateforms</p>
+        <a href="/"><img src="/images/facebook.png" alt="facebook"></a>
+        <a href="/"><img src="/images/instagram.png" alt="instaram"></a>
+        <a href="/"><img src="/images/twitter.png" alt="twitter"></a>
+        <a href="/"><img src="/images/youtube.png" alt="youtube"></a>
+      </div>
+    </div>
+    <div id="copyright">
+      Copyright © 2022 Insider Inc. All rights reserved. Registration on or use of this site constitutes
+      acceptance of our Terms of Service, Privacy Policy and Cookies Policy.
+    </div>
+  </footer>
+  <script>
+    function validate1() {
+      var name = document.getElementById("name1").value;
+      var phone = document.getElementById("phone1").value;
+      var amount = document.getElementById("amount").value;
+      var error_message = document.getElementById("error_message");
+      var form = document.getElementById("form");
+
+      error_message.style.padding = "10px";
+
+      var text;
+      if (name.length == 0) {
+        text = "Please Enter valid Name";
+        error_message.innerHTML = text;
+        return false;
+      }
+      if (isNaN(phone) || phone.length != 10) {
+        text = "Please Enter valid Phone Number";
+        error_message.innerHTML = text;
+        return false;
+      }
+      if (amount < 25) {
+        text = "Please Enter Amount more than 25";
+        error_message.innerHTML = text;
+        return false;
+      }
+      
+      form.innerHTML = "<div style=\"width:100%\"><h1>Scan below QR to Donate</h1></div><img src=\"https://pmnrf.gov.in/assets/uploads/downloads/qr_code_PMNRF_20190416114057.png\" width=\"300px\" height=\"300px\">";
+      return true;
+    }
+
+    function validate2() {
+      var name = document.getElementById("name2").value;
+      var address = document.getElementById("address2").value;
+      var option = document.getElementById("options").value;
+
+      var error_message2 = document.getElementById("error_message2");
+
+      error_message2.style.padding = "10px";
+
+      var text;
+      if (name.length == 0) {
+        text = "Please Enter valid Name";
+        error_message2.innerHTML = text;
+        return false;
+      }
+      if (address.length == 0) {
+        text = "Please Enter valid Address";
+        error_message2.innerHTML = text;
+        return false;
       }
 
-      function validate2(){
-        var name2 = document.getElementById("name").value;
-        var address = document.getElementById("address").value;
-        
-        
-        var error_message2 = document.getElementById("error_message2");
-    
-        error_message2.style.padding = "10px";
-    
-        var text;
-        if(name2.length ==0){
-          text = "Please Enter valid Name";
-          error_message2.innerHTML = text;
-          return false;
-        }
-        if(address.length==0){
-          text = "Please Enter valid Address";
-          error_message2.innerHTML = text;
-          return false;
-        }
-        
-        
-        return true;
-      }
+      error_message2.style.backgroundColor = "green";
+      text = "Thanks for submiting form. Our agent will pick those " + option + " Soon..";
+      error_message2.innerHTML = text;
+      return true;
+    }
 
-      </script>
+  </script>
 </body>

@@ -108,7 +108,7 @@
         var error_message = document.getElementById("error_message");
     
         error_message.style.padding = "10px";
-    
+        
         var text;
         if(name.length ==0){
           text = "Please Enter valid Name";
@@ -125,8 +125,10 @@
           error_message.innerHTML = text;
           return false;
         }
-        
-        // alert("Form Submitted Successfully!\nWe will contact you soon.");
+
+        error_message.style.backgroundColor = "green";
+        text="Your contact has been stored. we will contact you soon.."
+        error_message.innerHTML = text;
         return true;
       }
       </script>
