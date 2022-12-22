@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.commonheadingsize{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.commonsubheadingsize{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+.commonBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar CSS started*/
+
+.navbar{
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial","sans-serif";
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #2dcbff;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+    z-index: 2;
+}
+
+#navlogo{
+    height: 1.5vw;
+    display: flex;
+    margin-left: 0vw;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#navlogo img{
+    height: 2vw;
+    filter: grayscale(1)invert(1)brightness(2);
+    margin-left: 0.45vw;
+    margin-right: 0.9vw;
+}
+
+#navlogo span{
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navlogo p{
+    border-left: 0.7px solid rgba(255, 255, 255, 0.849);
+    padding: 0.6vw 0vw;
+    padding-left: 1.2vw;
+    font-size: 1.2vw;
+    font-weight: lighter;
+}
+
+#navlinks{
+    margin-right: 0.5vw;
+}
+
+#navlinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navlinks li a{
+    margin: 0px 0.3vw;
+    padding: 0.3vw 0.5vw;
+    font-size: 1.4vw;
+}
+
+#navlinks li a:hover{
+    background-color: white;
+    color: #2dcbff;
+    box-shadow: 0px 0px 5px rgb(51, 136, 247);
+    border-radius: 0.3vw;
+}
+
+/* Navabar CSS ended */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+/* Contact form started */
+
+.news{
+    width: 80%;
+    margin: 2vw;
+}
+
+#contactform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#detailsform form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+    margin: 1vw;
+}
+
+.entry input{
+    padding: 0.4vw;
+    border: 0;
+    border-radius: 2px;
+    border-bottom: 1px solid black;
+}
+
+#contactaddress{
+    display: flex;
+    flex-direction: column;
+    background-color: #2dcbff;
+    padding: 2.5vw;
+    color: white;
+    height: 30vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+}
+
+/* Contact form ended */
+
+/* footer started */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2dcbff;
+    width: 100%;
+}
+
+#pageDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#address{
+    width: 25vw;
+    font-size: 1.2vw;
+    color: white;
+}
+
+#socialmedia{
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    padding: 2vw;
+}
+
+#socialmedia img{
+    filter: invert(1);
+    width: 3.5vw;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 1vw;
+    color: white;
+    padding: 0.6vw;
+}
+
+/* footer ended */

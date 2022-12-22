@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Donation</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">
+            <div id="navlogo">
+                <span>donate.in</span>
+                <img src="..//images/logo.png" alt="Donate">
+                <p>Charity ends poverty</p>
+            </div>
+        </a>
+        <div id="navlinks">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/donate">Donate</a></li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="news">
+        <h1 class="commonheadingsize">Contact Us</h1>
+        <p class="commonsubheadingsize">We would love to have you in community. Feel free to get in touch with us.</p>
+        </div>
+        <div id="contactform">
+            <div id="detailsform">
+                <form action="/contact" method="post" id="form" onsubmit = "return validate();">
+                    <div class="entry">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="entry">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="Phone" id="phone" placeholder="9999999999">
+                    </div>
+                    <div class="entry">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="entry">
+                        <label for="state">State</label>
+                        <input type="text" name="State" id="state" placeholder="Uttar Pradesh">
+                    </div>
+                    <div style = "display:flex; flex-direction:column; width: 40vw;">
+                        <label for="message">Message</label>
+                        <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="entry">
+                        <button type="submit" style="padding: 0.7vw; background-color:#2dcbff; border-radius: 23px; border: 0; cursor: pointer;">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div id="contactaddress">
+                <h2 style="margin-bottom: 1vw;">Reach Us</h2>
+                <p>Email Contactus@gmail.com</p>
+                <p>Phone No. +91 8978697800</p>
+                <p> B.S.A. College of Engineering & Technology Near New Bus Stand</p>
+                <p> Mathura(U.P.), 281004</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div id="pageDetails">
+            <div id="address">
+                <p>
+                    B.S.A. College of Engineering & Technology Near New Bus Stand, Mathura(U.P.), 281004
+                </p>
+                <p>
+                    7055602438, 910533781
+                </p>
+                <p>
+                    info@bsacet.org
+                </p>
+            </div>
+            <div id="socialmedia">
+                <p style="color: white; font-size: 1.5vw;">Our social plateforms</p>
+                <a href="/"><img src="/images/facebook.png" alt="facebook"></a>
+                <a href="/"><img src="/images/instagram.png" alt="instaram"></a>
+                <a href="/"><img src="/images/twitter.png" alt="twitter"></a>
+                <a href="/"><img src="/images/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div id="copyright">
+            Copyright © 2022 Insider Inc. All rights reserved. Registration on or use of this site constitutes
+            acceptance of our Terms of Service, Privacy Policy and Cookies Policy.
+        </div>
+    </footer>
+    <script>
+        function validate(){
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var error_message = document.getElementById("error_message");
+    
+        error_message.style.padding = "10px";
+    
+        var text;
+        if(name.length ==0){
+          text = "Please Enter valid Name";
+          error_message.innerHTML = text;
+          return false;
+        }
+        if(isNaN(phone) || phone.length != 10){
+          text = "Please Enter valid Phone Number";
+          error_message.innerHTML = text;
+          return false;
+        }
+        if(email.indexOf("@") == -1 || email.length < 6){
+          text = "Please Enter valid Email";
+          error_message.innerHTML = text;
+          return false;
+        }
+        
+        // alert("Form Submitted Successfully!\nWe will contact you soon.");
+        return true;
+      }
+      </script>
+</body>
+
+</html>
