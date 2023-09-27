@@ -1,3 +1,0 @@
-MONGODB_URI = mongodb+srv://donatedotin:OMqWHmZeBgrx9Ukw@donatedotin.nouwmzh.mongodb.net/?retryWrites=true&w=majority
-SECRET_KEY = sk_test_51NcUE4SJJCAWoBBstOyBGveCjyMuF1LXM6oA3lVh8VhvhiLdV1JUO1HKWpTnAsrTvSvhsuzbjzHQwI3DuQXGeUip00QpgKsvO9
-pass = cpwgpflnpfdeboja
