@@ -1,3 +1,3 @@
 # Donate for Good
 
-checkout our amazing website [donatedotin.org](https://donatedotin.in "checkout this website")
+checkout our amazing website [donatedotin.org](https://donatedotin.onrender.com "checkout this website")
